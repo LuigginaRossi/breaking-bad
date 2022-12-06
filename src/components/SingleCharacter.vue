@@ -30,7 +30,7 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss">
     .card-img, .card-img-bottom, .card-img-top {
     width: 100%;
     aspect-ratio: 1/1;
@@ -39,5 +39,10 @@ export default {
 
     .card{
         height: 100%;
+        transition: all .3s;
+        &:hover{
+            opacity: .8;
+            transform: scale(1.05);
+        }
     }
 </style>
