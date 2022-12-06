@@ -22,7 +22,7 @@ export default {
 <template>
     <div class="card border-0">
         <img :src="character.imageUrl" class="card-img-top" :alt="character.lastName">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column align-item-center justify-content-start">
             <h5 class="card-title">{{character.firstName}} {{character.lastName}}</h5>
             <h6 class="card-text">{{character.title}}</h6>
             <small>{{character.family}}</small>
@@ -30,10 +30,14 @@ export default {
     </div>
 </template>
 
-<style>
+<style scoped>
     .card-img, .card-img-bottom, .card-img-top {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
+    }
+
+    .card{
+        height: 100%;
     }
 </style>
